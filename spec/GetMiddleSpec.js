@@ -16,4 +16,9 @@ describe('GetMiddle', function() {
     expect(getMiddle.getLetter('testing')).toEqual('t')
   })
 
+  it('should show middle letters for "test"', function() {
+    getMiddle = new GetMiddle();
+    expect(getMiddle.getLetter('test')).toEqual('es')
+  })
+
 })
